@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đặt Bàn Quán Ăn</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 15px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #fdfbfb, #ebedee);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .booking-form {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px 25px;
+            max-width: 420px;
+            width: 100%;
+        }
+        
+        .booking-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .form-group {
+            margin-bottom: 18px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #444;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            outline: none;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: border 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: #4a90e2;
+            box-shadow: 0 0 6px rgba(74, 144, 226, 0.3);
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: #4a90e2;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        button:hover {
+            background: #357ab7;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="booking-form">
+        <h2>Đặt Bàn</h2>
+
+        <div class="form-group">
+            <label for="date">Ngày đặt</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+
+        <div class="form-group">
+            <label for="time">Giờ đặt</label>
+            <input type="time" id="time" name="time" required>
+        </div>
+
+        <div class="form-group">
+            <label for="guests">Số người</label>
+            <select id="guests" name="guests" required>
+        <option value="">-- Chọn số người --</option>
+        <option value="1-2">1 - 2 người</option>
+        <option value="3-4">3 - 4 người</option>
+        <option value="5-6">5 - 6 người</option>
+        <option value="7-10">7 - 10 người</option>
+        <option value="10+">Trên 10 người</option>
+      </select>
+        </div>
+
+        <div class="form-group">
+            <label for="requests">Yêu cầu đặc biệt</label>
+            <textarea id="requests" name="requests" placeholder="Ví dụ: cần bàn gần cửa sổ, ăn chay..."></textarea>
+        </div>
+
+        <button type="submit">Đặt bàn ngay</button>
+    </form>
+</body>
+
+</html>
