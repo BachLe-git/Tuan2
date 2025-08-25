@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chèn video YouTube</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            text-align: center;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .video-container {
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
+        
+        .video-container iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+            display: block;
+        }
+        
+        @media (max-width: 600px) {
+            .video-container iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Video YouTube minh họa</h1>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/9lHW9MQqG-Q" title="YouTube video" allowfullscreen>
+    </iframe>
+    </div>
+    <p>Thủ tướng họp khẩn ứng phó bão số 5 Kajiki. Bảo vệ tính mạng nhân dân là mục tiêu cao nhất.</p>
+</body>
+
+</html>
